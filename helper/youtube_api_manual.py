@@ -3,10 +3,10 @@ import os
 
 # необходимо установить через: pip install google-api-python-client
 from googleapiclient.discovery import build
-
+from dotenv import load_dotenv
 import isodate
 
-
+load_dotenv()
 # YT_API_KEY скопирован из гугла и вставлен в переменные окружения
 api_key: str = os.getenv('YT_API_KEY')
 
